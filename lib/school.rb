@@ -13,7 +13,7 @@ class School
 
   def end_time
     raw_time = (hours_in_school_day.to_i) + (start_time.to_i)
-    return "#{raw_time}:00"
+    "#{raw_time}:00"
   end
 
   def is_full_time?
@@ -32,7 +32,7 @@ class School
 
   def convert_end_time_to_clock_time
     clock_hour = (end_time.to_i) - 12
-    return "#{clock_hour}:00"
+    "#{clock_hour}:00"
   end
 
 end
