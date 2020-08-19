@@ -62,14 +62,14 @@ class SchoolTest < Minitest::Test
     school.add_student_name('megan')
 
     school.standard_student_names
-    require "pry"; binding.pry
     assert_equal ['Aurora', 'Tim', 'Megan'], school.standard_student_names
   end
 
   #Iteration 4 Test:
   def test_convert_end_time_to_clock_time
     school = School.new('9:00', 7)
-    require "pry"; binding.pry
+    
+    assert_equal "4:00", school.convert_end_time_to_clock_time
   end
 
 end
